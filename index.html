@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="essaie.css" rel="stylesheet">
-    <title> Site web 2</title>
+    <title> essaie</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -14,7 +14,7 @@
     <div class="container">
         <header>
             <nav class="navbar">
-                <img src="images\logo.png" class="logo" alt="logo">
+                <img src="exercice2-html-css\images\logo.png" class="logo" alt="logo">
                 <div class="nav-links1">
                     <ul>
                         <li><a href="#">HOME</a></li>
@@ -48,6 +48,21 @@
             </nav>
             <section class="section-slider">
                 <div class="slider">
+                    <div class="menu">
+                        <label for="slide-dot-1" class="dot-1"></label>
+                        <label for="slide-dot-2" class="dot-2"></label>
+
+                    </div>
+                    <div class="slider-container">
+
+
+                        <input class="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
+                        <img class="slide-img" src="7-3-removebg.png">
+
+                        <input class="slide-input" id="slide-dot-2" type="radio" name="slides">
+                        <img class="slide-img" src="2-1-removebg.png">
+
+                    </div>
                     <div class="info">
                         <div class="hr-h6">
                             <hr>
@@ -70,133 +85,280 @@
 
                     </div>
                 </div>
-                <div class="navigation">
-                  <div class="btn"></div>
-                  <div class="btn"></div>
+
+            </section>
+        </header>
+        <main class="main-container">
+            <section class="img-section">
+                <div class="zoom">
+                    <div class="img-div">
+                        <img src="images\2.jpg" alt="" class="img-img">
+
+
+                        <img src="images\3.jpg" alt="" class="img-img">
+
+
+                        <img src="images\4.jpg" alt="" class="img-img">
+
+
+                        <img src="images\5.jpg" alt="" class="img-img">
+                    </div>
                 </div>
             </section>
-       </header>
-       <main class="main-container">
-               <section class="img-section">
-                   <div class="img-div">
-                      <img src="images\2.jpg" alt="" class="img-img">
-                   
-                   
-                      <img src="images\3.jpg" alt="" class="img-img">
-                   
-                   
-                      <img src="images\4.jpg" alt="" class="img-img">
-                   
-                   
-                      <img src="images\5.jpg" alt="" class="img-img">
-                   </div>
-               </section>
-               <section class="img-section2">
-                    <article class="img-article" >
-                       <h3>NEW ARRIVAL</h3>
-                       <div class="img-1">
-                          <div><span></span><img src="images\2-1.png" alt="" class="img-img-2"></div>
-                          <div><span></span><img src="images\4-3.png" alt=""class="img-img-2"></div>
-                          <div><span></span><img src="images\5-1.png" alt=""class="img-img-2"></div>
-                          <div><span></span><img src="images\6-3.png" alt=""class="img-img-2"></div>
-                       </div>
-                    </article>
-                    <article class="img-article">
-                       <h3>NEW TOP SALES</h3>
-                       <div class="img-1">
-                          <div class="img-2"><span></span><img src="images\7-3.png" alt=""class="img-img-2"></div>
-                          <div><span></span><img src="images\8-1.png" alt=""class="img-img-2"></div>
-                          <div><span></span><img src="images\9-1.png" alt=""class="img-img-2"></div>
-                          <div><span></span><img src="images\10-3.png" alt=""class="img-img-2"></div>
-                       </div>
-                    </article>
-                    <article class="img-article">
-                       <h3>OFF SALES</h3>
-                       <div class="img-1">
-                          <div><span></span><img src="images\2-1.png" alt=""class="img-img-2"></div>
-                          <div><span></span><img src="images\7-3.png" alt=""class="img-img-2"></div>
-                          <div><span></span><img src="images\4-3.png" alt=""class="img-img-2"></div>
-                          <div><span></span><img src="images\9-1.png" alt=""class="img-img-2"></div>
-                      </div>
-                    </article>
-
-                </section>
-                <section>
-                     <div></div>
-                     <div></div>
-                </section>
-                <section>
-                    <article>
-                        <h1>top products</h1>
-                        <div></div>
-                    </article>
-                </section>
-                <article>
-
+            <section class="img-section2">
+                <article class="img-article">
+                    <div class="article-title">
+                        <h3>NEW ARRIVAL</h3>
+                        <hr>
+                        <h3>TOP SALES</h3>
+                        <h3>OFF SALES</h3>
+                    </div>
+                    <div class="img-1">
+                        <span></span>
+                        <div class="card-1">
+                            <span class="vert"> 10% </span>
+                            <img src="images\2-1.png" alt="" class="img-img-2">
+                            <div class="quick-view">
+                                <div class="quick-view-div">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                                    <i class="fa fa-random" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-1">
+                            <span>HOT</span>
+                            <img src="images\4-3.png" alt="" class="img-img-2">
+                        </div>
+                        <div class="card-1">
+                            <span class="vert">10%</span>
+                            <img src="images\5-1.png" alt="" class="img-img-2">
+                        </div>
+                        <div class="card-1">
+                            <span> HOT </span>
+                            <img src="images\6-3.png" alt="" class="img-img-2">
+                        </div>
+                        <span></span>
+                    </div>
                 </article>
-                <div>
+                <!-- <article >
+                       <h3>NEW TOP SALES</h3>
+                        <div class="img-1">
+                          <div class="img-2"><span></span><img src="7-3.png" alt=""class="img-img-2"></div>
+                          <div><span></span><img src="8-1.png" alt=""class="img-img-2"></div>
+                          <div><span></span><img src="9-1.png" alt=""class="img-img-2"></div>
+                          <div><span></span><img src="10-3.png" alt=""class="img-img-2"></div>
+                       </div>
+                    </article> -->
+                <!-- <article >
+                       <h3>OFF SALES</h3>
+                        <div class="img-1">
+                          <div><span></span><img src="2-1.png" alt=""class="img-img-2"></div>
+                          <div><span></span><img src="7-3.png" alt=""class="img-img-2"></div>
+                          <div><span></span><img src="4-3.png" alt=""class="img-img-2"></div>
+                          <div><span></span><img src="9-1.png" alt=""class="img-img-2"></div>
+                      </div> 
+                    </article> -->
 
+            </section>
+            <section class="vide">
+                <div class="div-vide"> <img src="images\4.jpg" class="img-vide"></div>
+                <div class="div-vide"> <img src="images\5.jpg" class="img-vide"></div>
+            </section>
+            <section class="section-products">
+                <article>
+                    <h2>top products</h2>
+                    <hr class="ligne">
+                    <div class="class-products">
+                        <div class="card">
+                            <span> HOT </span>
+                            <img src="images\2-1.png" alt="" class="products-img-2">
+                            <div class="card-text">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <h6 style="font-weight: 100;">HEART'S DESIRE</h6>
+                                <hr>
+                                <h5>$15.00</h5>
+                            </div>
+                        </div>
+                        <div class="card">
+
+                            <span class="vert"> 10% </span>
+                            <img src="images\7-3.png" alt="" class="products-img-2">
+                            <div class="card-text">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <h6 style="font-weight: 100;">PINK FLOWER TREE</h6>
+                                <hr>
+                                <h5>
+                                    $18.00
+                                </h5>
+                                <h5 class="hache">$21.00</h5>
+
+                            </div>
+                        </div>
+                        <div class="card">
+
+                            <span>HOT</span>
+                            <img src="images\4-3.png" alt="" class="products-img-2">
+                            <div class="card-text">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <h6 style="font-weight: 100;">PREMUIM JOYFUL</h6>
+                                <hr>
+                                <h5>$18.00 </h5>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <span class="vert">10%</span>
+                            <img src="images\9-1.png" alt="" class="products-img-2">
+                            <div class="card-text">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <h6 style="font-weight: 100;">THE WHITE ROSE</h6>
+                                <hr>
+                                <h5>$16.00 </h5>
+                                <h5 class="hache">$19.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <article class="div-bas">
+                <div class="div-svg">
+
+                    <div class="div-img-text">
+                        <img src="images\8-trolley-4.svg" class="img-svg" alt="img">
+                        <div class="text">
+                            <p> Free Shipping </p>
+                            <p class="text2"> On all orders over $49.00</p>
+                        </div>
+                    </div>
+                    <div class="div-img-text">
+                        <img src="images\9-money-4.svg" class="img-svg" alt="img">
+                        <div class="text">
+                            <p> 15 days returns </p>
+                            <p class="text2"> Moneyback guarantee</p>
+                        </div>
+                    </div>
+                    <div class="div-img-text">
+                        <img src="images\10-credit-card-4.svg" class="img-svg" alt="img">
+                        <div class="text">
+                            <p> Secure Checkout </p>
+                            <p class="text2"> Protected by Paypal</p>
+                        </div>
+                    </div>
+                    <div class="div-img-text">
+                        <img src="images\11-gift-card-4.svg" class="img-svg" alt="img">
+                        <div class="text">
+                            <p> Offer & gift here </p>
+                            <p class="text2"> On all orders over</p>
+                        </div>
+                    </div>
                 </div>
+            </article>
+
         </main>
     </div>
     <footer>
-        <nav>
-            <div>
-                MY ACCOUNT
-                <ul>
-                    <li>My account</li>
-                    <li>Checkout</li>
-                    <li>Contact us</li>
-                    <li>Shopping Cart</li>
-                    <li>Wishlist</li>
-                </ul>
+        <article class="img-png">
+            <img src="images\1-5.png">
+            <img src="images\2-5.png">
+            <img src="images\3-5.png">
+            <img src="images\4-5.png">
+            <img src="images\5-5.png">
+            <img src="images\1-5.png">
+        </article>
+        <nav class="nav-footer">
+            <div class="div-footer">
+                <div>
+                    <h3> ACCOUNT </h3>
+                    <ul>
+                        <li>My account</li>
+                        <li>Checkout</li>
+                        <li>Contact us</li>
+                        <li>Shopping Cart</li>
+                        <li>Wishlist</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3> LINKS </h3>
+                    <ul>
+                        <li>Store Location</li>
+                        <li>Orders Tracking</li>
+                        <li>Size Guide</li>
+                        <li>My account</li>
+                        <li>FAQs</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3> INFORMATION </h3>
+                    <ul>
+                        <li>Privacy Page</li>
+                        <li>About us</li>
+                        <li>Careers</li>
+                        <li>Delivery information</li>
+                        <li>Term & Conditions</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3> SERVICE </h3>
+                    <ul>
+                        <li>Shipping Policy</li>
+                        <li>Help & Contact Us</li>
+                        <li>Returns & Refunds</li>
+                        <li>Online Stores</li>
+                        <li>Terms and Conditions</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3> ABOUT SHOP </h3>
+                    <ul>
+                        <li class="lorem">Lorem ipsum dolor sit amet, consecteur adipisicing elit,
+                            sed do eiusmo incididunt ut labore et dolore
+                        </li>
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> Brooklyn,New York,United States</li>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i> +0123-456789</li>
+                        <li> <i class="fa fa-envelope-o" aria-hidden="true"></i> example@example.com</li>
+                        <li><i class="fa fa-cc-visa" aria-hidden="true"></i>
+                            <i class="fa fa-cc-paypal" aria-hidden="true"></i>
+                            <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                QUICK LINKS
-                <ul>
-                    <li>Store Location</li>
-                    <li>Orders Tracking</li>
-                    <li>Size Guide</li>
-                    <li>My account</li>
-                    <li>FAQs</li>
-                </ul>
+            <div class="footer-bas">
+                <hr />
+                <div class="text-bas">
+                    <p>
+                        © 2023 - Just For You
+                    </p>
+                </div>
+                <div class="social-media">
+                    <ul>
+                        <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-pinterest-p" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                INFORMATION
-                <ul>
-                    <li>Privacy Page</li>
-                    <li>About us</li>
-                    <li>Careers</li>
-                    <li>Delivery information</li>
-                    <li>Term & Conditions</li>
-                </ul>
-            </div>
-            <div>
-                COSTUMER SERVICE
-                <ul>
-                    <li>Shipping Policy</li>
-                    <li>Help & Contact Us</li>
-                    <li>Returns & Refunds</li>
-                    <li>Online Stores</li>
-                    <li>Terms and Conditions</li>
-                </ul>
-            </div>
-            <div>
-                ABOUT SHOP
-                <ul>
-                    <li>Lorem ipsum dolor sit amet, consecteur adipisicing elit,
-                        sed do eiusmo incididunt ut labore et dolore
-                    </li>
-                    <li>Brooklyn,New York,United States</li>
-                    <li>+0123-456789</li>
-                    <li>example@example.com</li>
-                    <li>Cartes</li>
-                </ul>
-            </div>
-
         </nav>
-        
+
     </footer>
+    
 </body>
 
 </html>
