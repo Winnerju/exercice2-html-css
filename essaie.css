@@ -19,21 +19,15 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    
-    
+    width: 100%;   
 }
 .navbar a{
     color: black;
 }
-.navbar .logo{
-    
-      
-}
-
 .navbar .nav-links1 ul {
     display: flex;
-    
+    justify-content: center;
+    align-items: center;   
 }
 
 .navbar .nav-links1 ul li {
@@ -42,6 +36,8 @@ body{
 }
 .navbar .nav-links2 ul {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .navbar .nav-links2 ul li {
     margin: 0 10px;
@@ -76,13 +72,25 @@ body{
     display: flex;
     flex-flow: column;
     text-transform: uppercase;
-    font-weight: 500;
-    font-size: 12px;
+    font-weight: 300;
+    font-size: 10px;
     line-height: 20px;
     margin-bottom: 0;
+    width: 60px;
+    
 }
 .ltn_secondary-color{
     color: crimson;
+    
+}
+.menu-hamburger{
+    display: none;
+    width: 25px;
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    background-color: #545151;
+
 }
 .container{
     text-align: center;
@@ -114,25 +122,24 @@ body{
 } */
 
 .slider-container {
-     max-width: 800px; 
-    /* position: relative; */
+    max-width: 800px; 
     position: absolute;
-    left: 900px;
-    top: 30%;
+    left: 800px;
+    top: 35%;
     width: 50%;
     margin: auto;
-    height: 600px; 
+    height: 800px; 
     overflow: hidden;
 }
 
 .menu {
     position: absolute;
-    left: 30%;
+    /* left: 30%; */
     /* right: 50%; */
     z-index: 11;
     width: 100%;
-    bottom: -17%;
-    /* top: 80%; */
+    /* bottom: -17%; */
+    top: 95%; 
     text-align: center;
 }
 .dot-1 {
@@ -165,8 +172,8 @@ body{
     width: 90%;
     height: 600px;
     position: absolute;
-    top: -80px;
-    left: 100%;
+    top: -120px;
+    left: 90%;
     z-index: 10;
     transition: left 0s 0.75s;
 }
@@ -176,22 +183,18 @@ body{
     transition: left 0.65s ease-out;
 }
 .slider{
-  position: absolute;
+  /* position: absolute; */
   left: 0;
   top: 0;
-  width: 60%;
-  height: 70vh;
+  width: 30%;
+  height: 50vh;
 }
 .slider .info{
     position: absolute;
-    left: 40%;
+    left: 27%;
     top:50%;
-    transform: translate(-50%, -50%);
-    
-}
-.info .hr-h6 {
-    /* display: inline-flex;
-    flex-direction: row; */
+    transform: translate(-50%, -50%); 
+     
 }
  hr{
   height: 3px;
@@ -231,7 +234,7 @@ body{
     margin: 30px 2px; 
     opacity:0.5;  
     border-radius: 5rem;
-    width: 40%;
+    width: 20%;
     background-color:rgb(222, 65, 91) ;
 }
 .navigation{
@@ -309,6 +312,10 @@ body{
     display: flex;
     flex-direction: row;
     margin-top: 20px;
+}
+.class-card{
+    display: flex;
+    flex-direction: row;
 }
 .img-article div h3{
     margin: 10px;
@@ -408,9 +415,6 @@ body{
     -webkit-transform:scale(1.1);
     transform:scale(1.1);
 }
-.img-svg{
-     width: 60px; 
-}
 .section-products{
     margin-top: 50px;
     font-size: 20px;
@@ -430,6 +434,10 @@ body{
     flex-direction: row;
     justify-content: space-between;
     margin-top: 35px;
+}
+.class-card2{
+    display: flex;
+    flex-direction: row;
 }
 .card{
     position:relative;
@@ -500,13 +508,21 @@ body{
     flex-direction: row;
     justify-content: space-evenly;
 }
-.div-svg .div-img-text{
+.col{
     display: flex;
     flex-direction: row;
 }
+.img-svg{
+     width: 90px; 
+}
+.div-svg .div-img-text{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
 .div-svg .text{
     margin-left: 20px;
-    margin-top: 50px;
+     margin-top: 30px; 
     text-align: left;
 }
 .div-svg .text2{
@@ -517,7 +533,8 @@ body{
     background-color: rgb(229, 228, 224);
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: space-between;
     /* border: 1px solid; */
 }
 .img-png img{
@@ -531,7 +548,8 @@ body{
 .nav-footer .div-footer{
     display:flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    flex-wrap: wrap;
     text-align: start;
     margin: 20px;
     width: 100%;
@@ -540,6 +558,8 @@ body{
 .nav-footer .div-footer div{
    
     color: white;
+    
+    
 }
 .div-footer ul li{
     color: #797878;
@@ -562,17 +582,14 @@ footer{
 }
 .footer-bas hr{
   height: 1px;
-  width: 90%;
+  width: 97%;
   margin-top: -20px;
   border-color: #797878;
 }
 .text-bas{
     position: absolute;
-    left:70px;
+    left:20px;
     margin: 10px;
-}
-.social-media{
-   
 }
 .social-media ul{
     display: flex;
@@ -583,17 +600,447 @@ footer{
 }
 
 /*mode tablette */
-  @media screen and(min-width:992px) and (max-width:1024px){
-   
+  @media screen and (min-width: 992px) and (max-width: 1378px)
+  {
     
+   .navbar .nav-links1 ul li {
+    margin: 0 16px;
+    size: 30rem;
+    }
+    .section-slider{
+        width: 100%;
+    }
+    .slider-container{
+        /* position: absolute;
+        width: 50%;*/
+        left: 65%; 
+    }
+    .slider .info{
+        width: 60%;
+        left: 40%;
+        
+    }
+    .img-article div hr{
+        left: 35%;
+    }
+    .card-1 .vert{
+        left: 30px;
+    }
+    .card-1 span{
+        left: 30px;
+    }
+    .div-vide{
+        width: 50%;
+    }
+    .section-products article hr{
+        width: 170px;
+    }
+    .footer-bas{
+        height: 10vh;
+    }
+    .footer-bas hr{
+        width: 95%;
+    }
+    .text-bas{
+        left: 15px;
+    }
+   .section-products article .ligne{
+     left: 48%;
+     width: 7%;
+    } 
   }
-/*mode mobile*/
- @media screen and (min-width:787px) and (max-width:991px){
+/*mode tablette*/
+  @media screen and (min-width:787px) and (max-width:991px){
+    .navbar .nav-links1 ul li{
+        display: none;
+    }
+    
+    .menu-li{
+    
+    width: 30px;
+    }
+    .menu-hamburger{
+        display: block;
+        width: 25px;
+    }
+    .slider .info{
+     left: 38%;  
+    }
+    .slider-container{
+        left: 450px;
+        top: 100px;
+    }
+    .info span{
+        width: 25%;
+    }
+    .img-div{
+        
+      display:flex;
+      flex-wrap: wrap;
+    }
+    .card-1 .vert{
+        left: 25px;
+    }
+    .card-1 span{
+        left: 25px;
+    }
+    .card .vert{
+        left: 25px;
+    }
+    .card span{
+        left: 25px;
+    }
+    
+    .img-img{
+        display: flex;
+        flex-direction: column;
+        width: 46%;
+        margin: 6px;
+    }
+    .img-vide{
+        width: 90%;
+        height: 30vh;
+    }
+    .img-article div hr{
+        left: 33%;
+    }
+    .section-products article hr{
+        width: 130px;
+    }
+    .div-svg{
+        
+        width: 100%;
+        height: 25vh;
+    }
+    .col{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .img-svg{
+        width: 50px;
+    }
+    .div-svg .text{
+        margin-top: 0;
+    }
+    .section-products article .ligne{
+        left:46%;
+        width:80px
 
+    }
+    .nav-footer .div-footer div{
+        width: 25%;
+    }
+    .text-bas{
+        left: 20px;
+    }
+    .footer-bas hr{
+        width: 95%;
+    }
  }
- @media screen and (max-width:786px){
+ @media screen and (min-width:500px) and (max-width:786px)
+  {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar .logo{
+        margin: 2px;
+    }
+    .navbar .nav-links1 ul li{
+        display: none;
+    }
+    
+    .menu-hamburger{
+        display: block;
+        width: 25px;
+        top: 45px;
+        right : 40px;
 
- }
- @media screen and (min-width:1440px){
+    }
+    .slider-container{
+        left: 60%;
+        top: 100px;
+    }
+    .slider .info{
+        left: 35%;
+        top: 250px;
+    }
+    .info h1{
+        font-size: 20px;
+        font-weight: 300;
+        padding:20px
 
- }
+    }
+    hr{
+      width:80px ;  
+    }
+    .info .hr-h6 h4{
+        font-size: 15px;
+        margin-right: -80px;
+    }
+    .info span{
+        width: 50%;
+    }
+    .img-div{
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+    }
+    .img-img{
+       width: 99%;
+       margin: 10px;
+       height: 50%;
+    }
+    .img-article div hr{
+        left: 25%;
+        width: 80px;
+    }
+    .img-1{
+        margin: 20px;
+        width: 100%;
+
+    }
+    .class-card{
+        display: flex;
+        flex-direction: column;
+    }
+    .img-img-2{
+        width: 100%;
+    }
+    .card-1{
+        
+        width: 90%;
+    }
+    .card-1 .vert{
+        left: -5px;
+
+    }
+    .card-1 span{
+        left: -5px;
+    }
+    .vide{
+        display: flex;
+        flex-direction: column;
+    }
+    .div-vide{
+        width: 100%;
+    }
+    .img-vide{
+        width: 100%;
+        height: 20vh;
+    }
+    .section-products article .ligne{
+        left: 45%;
+        width: 55px;
+    }
+    .card{
+        width: 90% ;
+        height: 20vh; 
+    }
+    .products-img-2{
+        width: 90%;
+        height: 40vh;
+    }
+    .card-text{
+        left: 9%;
+        
+    }
+    .div-svg{
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+    }
+    .col{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .class-card2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+        width: 90%;
+        height: 75vh;
+    }
+    .img-svg{
+        width: 30px;
+    }
+    .div-svg .text{
+        margin: 0;
+    }
+    .div-bas{ 
+        margin-top:70%;
+        width: 90%;
+    }
+    .section-products article hr{
+        width: 190px;
+    }
+    .img-png img{
+     width: 30%;
+    }
+    .nav-footer .div-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .nav-footer .div-footer div{
+        margin: 5px;
+    }
+    .social-media{
+      /* margin-top: 45px;  */
+      margin-left: 120px;
+    }
+
+}
+ @media screen and (max-width:499px){
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar .logo{
+        margin: 2px;
+    }
+    .navbar .nav-links1 ul li{
+        display: none;
+    }
+    
+    .menu-hamburger{
+        display: block;
+        width: 25px;
+        top: 45px;
+        right : 40px;
+
+    }
+    .section-slider{
+        height: 60vh;
+    }
+    .slider-container{
+        left: 60%;
+        top: 400px;
+
+    }
+    .slider .info{
+      margin-top: 60px;
+      left: 33%;
+      margin-left: 10px; 
+       
+    }
+    .info h1{
+        font-size: 25px;
+        margin-left: 5px ;
+        margin-top: 50px;
+    }
+    .hr-h6{
+        margin: 5px;
+        line-height: 20px;
+    }
+    hr{
+        top: 8px;
+    }
+    .info span{
+        width: 40%;
+    }
+    .img-div{
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+    }
+    .img-img{
+        width: 99%;
+        margin: 10px;
+        height: 50%;
+    }
+    .img-article div hr{
+        width: 20%;
+        left: 12%;
+    }
+    .img-1{
+        display: flex;
+        flex-direction: column;
+    }
+    .vide{
+        display: flex;
+        flex-direction: column;
+    }
+    .img-vide{
+        height: 20vh;
+    }
+    .section-products article .ligne{
+        width: 15%;
+        left: 42%;
+    }
+    .class-products{
+        display: flex;
+        flex-direction: column;
+    }
+    .class-card2{
+         display: flex;
+        flex-direction: column;
+        align-items: center; 
+        width: 90%;
+        
+    }
+    .card{
+        width: 100%;
+        height: 25vh;
+    }
+    .card span{
+        width: 35px;
+        height: 2vh;
+    }
+    .card .vert{
+        width: 35px;
+        height: 2vh;
+    }
+    .products-img-2{
+        width: 50%;
+    }
+    .card-text{
+        left: 27%;
+    }
+    .card-text i{
+        width: 5px;
+
+    }
+    .section-products article hr{
+        width: 150px;
+    }
+    .div-svg{
+        display: flex;
+        flex-direction: column;
+        height: 50vh; 
+    }
+
+    .col{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+   
+    .img-png img{
+        width: 30%;
+       margin: 2px;
+    }
+    .nav-footer .div-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .text-bas{
+        left: 20px;
+    }
+    
+    .social-media{
+        margin-top: 45px; 
+        
+         margin-left: -40px;
+    }
+    .nav-footer .div-footer div{
+        margin: 5px;
+    }
+} 
+  
