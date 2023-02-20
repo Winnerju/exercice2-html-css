@@ -52,12 +52,68 @@
             </nav>
             <section class="section-slider">
                 <div class="slider">
-                    <div class="menu">
+                    <ul class="slides">
+                        <input type="radio" name="radio-buttons" id="img-1" checked/>
+                        <li class="sli-cont">
+                            <div class="sli-image">
+                                <img src="images\img1-1.jpg">
+                            </div>
+                            <div class="carousel-controls">
+                              <label for="img-1" class="prev-slide">
+                                   <span>&lsaquo;</span>
+                               </label>
+                               <label for="img-2" class="next-slide">
+                                  <span>&rsaquo;</span>
+                                </label>
+
+                            </div>
+                        </li>
+                        <input type="radio" name="radio-buttons" id="img-2"/>
+                        <li class="sli-cont">
+                            <div class="sli-image">
+                               <img src="images\img1-2.jpg">
+                            </div>
+                            <div class="carousel-controls">
+                                <label for="img-1" class="prev-slide">
+                                  <span>&lsaquo;</span>
+                                </label>
+                                <label for="img-2" class="next-slide">
+                                  <span>&rsaquo;</span>
+                                </label>
+                            </div>
+                        </li>
+                        <div class="carousel-dots">
+                            <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+                            <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+                        </div>
+                    </ul>
+                    <div class="info">
+                        <div class="hr-h6">
+                            <hr>
+                            <h4>
+                                Flower & Gift
+                            </h4>
+                        </div>
+
+                        <h1 class="aller">
+                            Get Up To 75%
+                        </h1>
+                        <p class="milieu">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore.
+
+                        </p>
+                        <span class="retour">
+                            Shop Now
+                        </span>
+
+                    </div> 
+                    <!-- <div class="menu">
                         <label for="slide-dot-1" class="dot-1"></label>
                         <label for="slide-dot-2" class="dot-2"></label>
 
-                    </div>
-                    <div class="slider-container">
+                    </div> -->
+                    <!-- <div class="slider-container">
 
 
                         <input class="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
@@ -66,8 +122,8 @@
                         <input class="slide-input" id="slide-dot-2" type="radio" name="slides">
                         <img class="slide-img" src="2-1-removebg.png">
 
-                    </div>
-                    <div class="info">
+                    </div> -->
+                    <!-- <div class="info">
                         <div class="hr-h6">
                             <hr>
                             <h4>
@@ -85,9 +141,9 @@
                         </p>
                         <span>
                             Shop Now
-                        </span>
+                        </span> -->
 
-                    </div>
+                    <!-- </div> -->
                 </div>
 
             </section>
@@ -121,7 +177,7 @@
                     <div class="img-1">
                         <span></span>
                         <div class="class-card">
-                            <div href class="card-1">
+                            <div class="card-1">
                                 <span class="vert"> 10% </span>
                                 <img src="images\2-1.png" alt="" class="img-img-2">
                                 <!-- <div class="quick-view"> -->
@@ -240,11 +296,11 @@
                             <div class="card">
                                 <span> HOT </span>
                                 <img src="images\2-1.png" alt="" class="products-img-2">
-                                <!-- <div class="quick-view-div">
+                                <div class="quick1-view-div">
                                     <i class="fa fa-search" aria-hidden="true"></i>
                                     <i class="fa fa-shopping-bag" aria-hidden="true"></i>
                                     <i class="fa fa-random" aria-hidden="true"></i>
-                                </div> -->
+                                </div>
                                 <div class="card-text">
                                     <i class="fa fa-star-o" aria-hidden="true"></i>
                                     <i class="fa fa-star-o" aria-hidden="true"></i>
@@ -252,8 +308,6 @@
                                     <i class="fa fa-star-o" aria-hidden="true"></i>
                                     <i class="fa fa-star-o" aria-hidden="true"></i>
                                     <h6 class="new-2" style="font-weight: 100;">HEART'S DESIRE</h6>
-                                    <!-- <hr> -->
-                                    <!-- <div class="new-2"></div> -->
                                     <h5>$15.00</h5>
                                 </div>
 
@@ -262,11 +316,11 @@
 
                                 <span class="vert"> 10% </span>
                                 <img src="images\10-3.png" alt="" class="products-img-2">
-                                <!-- <div class="quick-view-div">
+                                <div class="quick1-view-div">
                                     <i class="fa fa-search" aria-hidden="true"></i>
                                     <i class="fa fa-shopping-bag" aria-hidden="true"></i>
                                     <i class="fa fa-random" aria-hidden="true"></i>
-                                </div> -->
+                                </div>
                                 <div class="card-text">
                                     <i class="fa fa-star-o" aria-hidden="true"></i>
                                     <i class="fa fa-star-o" aria-hidden="true"></i>
@@ -274,8 +328,6 @@
                                     <i class="fa fa-star-o" aria-hidden="true"></i>
                                     <i class="fa fa-star-o" aria-hidden="true"></i>
                                     <h6 class="new-2" style="font-weight: 100;">PINK FLOWER TREE</h6>
-                                    <!-- <hr> -->
-                                    <!-- <div ></div> -->
                                     <h5>
                                         $18.00
                                     </h5>
@@ -289,11 +341,11 @@
 
                                 <span>HOT</span>
                                 <img src="images\4-3.png" alt="" class="products-img-2">
-                                <!-- <div class="quick-view-div">
+                                <div class="quick1-view-div">
                                     <i class="fa fa-search" aria-hidden="true"></i>
                                     <i class="fa fa-shopping-bag" aria-hidden="true"></i>
                                     <i class="fa fa-random" aria-hidden="true"></i>
-                                </div> -->
+                                </div>
                                 <div class="card-text">
                                     <i class="fa fa-star-o" aria-hidden="true"></i>
                                     <i class="fa fa-star-o" aria-hidden="true"></i>
@@ -308,11 +360,11 @@
                             <div class="card">
                                 <span class="vert">10%</span>
                                 <img src="images\9-1.png" alt="" class="products-img-2">
-                                <!-- <div class="quick-view-div">
+                                <div class="quick1-view-div">
                                     <i class="fa fa-search" aria-hidden="true"></i>
                                     <i class="fa fa-shopping-bag" aria-hidden="true"></i>
                                     <i class="fa fa-random" aria-hidden="true"></i>
-                                </div> -->
+                                </div>
                                 <div class="card-text">
                                     <i class="fa fa-star-o" aria-hidden="true"></i>
                                     <i class="fa fa-star-o" aria-hidden="true"></i>
@@ -320,8 +372,6 @@
                                     <i class="fa fa-star-o" aria-hidden="true"></i>
                                     <i class="fa fa-star-o" aria-hidden="true"></i>
                                     <h6  class="new-2" style="font-weight: 100;">THE WHITE ROSE</h6>
-                                    <!-- <hr> -->
-                                    <!-- <div class="new-2"></div> -->
                                     <h5>$16.00 </h5>
                                     <h5 class="hache">$19.00</h5>
                                 </div>
