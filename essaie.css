@@ -17,7 +17,7 @@ body{
 
 .container{
     text-align: center;
-    margin: 50px;
+    margin: 40px;
 }
 .navbar{
     position:relative;
@@ -108,7 +108,6 @@ body{
  overflow: hidden;
  background-color:#eaccd2;
 }
-
 ul.slides {
     display: block;
     position: relative;
@@ -785,7 +784,10 @@ footer{
 /*mode tablette */
   @media screen and (min-width: 992px) and (max-width: 1378px)
   {
-    
+    .container{
+        text-align: center;
+        margin: 30px;
+    }
    .navbar .nav-links1 ul li {
     margin: 0 16px;
     size: 30rem;
@@ -1076,7 +1078,7 @@ hr{
     
 .container{
     text-align: center;
-    margin: 30px;
+    margin: 20px;
 }
     .navbar{
     position:relative;
@@ -1417,7 +1419,7 @@ hr{
     
   .container{
     text-align: center;
-    margin: 30px;
+    margin: 10px;
    }
     .navbar {
         display: flex;
@@ -1437,12 +1439,13 @@ hr{
         right : 40px;
 
     }
+    
+    .section-slider{
+        height: 80vh;
+    }
     .slider-container{
         left: 60%;
         top: 100px;
-    }
-    .section-slider{
-        height: 80vh;
     }
     .slider .info{
         left: 37%;
@@ -1454,7 +1457,7 @@ hr{
         
     }
     .info .hr-h6{
-        margin: auto;
+       margin: auto;
     }
     hr{
     height: 3px;
@@ -1466,9 +1469,9 @@ hr{
     }
     .info .hr-h6 h4{
         font-size: 15px;
-        left: 70px;
         /* margin-right: 20px; */
         margin-top: 5px;
+        left: 70px;
         position: relative;
     }
     .info span{
@@ -1764,7 +1767,7 @@ hr{
     
 .container{
     text-align: center;
-    margin: 20px;
+    margin: 10px;
 }
     .navbar {
         display: flex;
